@@ -50,7 +50,7 @@ print("Number of unique letters:", hangman_game.num_letters)
 print("Number of lives:", hangman_game.num_lives)
 print("List of guesses:", hangman_game.list_of_guesses)
 
-# Step 1: Creating the play_game function
+# Creating the play_game function
 def play_game(word_list):
     num_lives = 5
     game = Hangman(word_list, num_lives)
@@ -65,6 +65,6 @@ def play_game(word_list):
             print('Congratulations. You won the game!')
             break
 
-# Step 2: Calling the play_game function to play the game
+# Calling the play_game function to play the game
 # Assume 'word_list' contains a list of words
 play_game(word_list)
