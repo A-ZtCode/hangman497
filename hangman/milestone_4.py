@@ -1,8 +1,6 @@
-# Writing the code for milestone_4.py
-
 import random
 
-# Adding the check_guess and ask_for_input methods to the Hangman class
+# Creating a Hangman class and adding the check_guess and ask_for_input methods to the Hangman class
 
 class Hangman:
     def __init__(self, word_list, num_lives=5):
@@ -41,7 +39,6 @@ class Hangman:
                 break
 
 # Testing the Hangman class with the new methods
-# Assume 'word_list' contains a list of words
 hangman_game = Hangman(word_list)
 hangman_game.ask_for_input()
 print("Word to guess:", hangman_game.word)
