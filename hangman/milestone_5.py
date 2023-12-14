@@ -1,9 +1,6 @@
-# Writing the code for milestone_4.py
-
 import random
 
-# Adding the check_guess and ask_for_input methods to the Hangman class
-
+# Creating a Hangman class and the check_guess and ask_for_input methods to the Hangman class
 class Hangman:
     def __init__(self, word_list, num_lives=5):
         self.word = random.choice(word_list).lower()
@@ -25,8 +22,6 @@ class Hangman:
             self.num_lives -= 1
             print(f"Sorry, {guess} is not in the word.")
             print(f"You have {self.num_lives} lives left.")
-            # More logic will be added here in the next task
-        # More conditions will be added here in the next task
 
     def ask_for_input(self):
         while True:
@@ -41,7 +36,6 @@ class Hangman:
                 break
 
 # Testing the Hangman class with the new methods
-# Assume 'word_list' contains a list of words
 hangman_game = Hangman(word_list)
 hangman_game.ask_for_input()
 print("Word to guess:", hangman_game.word)
@@ -66,5 +60,4 @@ def play_game(word_list):
             break
 
 # Calling the play_game function to play the game
-# Assume 'word_list' contains a list of words
 play_game(word_list)
